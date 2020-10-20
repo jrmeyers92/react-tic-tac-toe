@@ -1,7 +1,19 @@
 import React from "react";
 
 const Square = () => {
-	return <div></div>;
+	const style = {
+		background: "lightBlue",
+		height: "50px",
+		width: "50px",
+		border: "3px solid Darkblue",
+		cursor: "pointer",
+	};
+
+	return (
+		<div>
+			<button style={style}></button>
+		</div>
+	);
 };
 
 export default Square;
