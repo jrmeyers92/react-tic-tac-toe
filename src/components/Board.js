@@ -10,13 +10,9 @@ const Board = () => {
 	const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 	return (
-		<div
-			style={style}
-			onClick={(e) => {
-				console.log(e.target.value);
-			}}>
+		<div style={style} onClick={(e) => console.log(e.target.innerHTML)}>
 			{squares.map((square) => (
-				<Square value={square}>square</Square>
+				<Square square={square}></Square>
 			))}
 		</div>
 	);
