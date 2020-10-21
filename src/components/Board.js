@@ -2,11 +2,9 @@ import React from "react";
 import Square from "./Square";
 
 const Board = () => {
-	const style = {
-		display: "grid",
-	};
+	const style = {};
 
-	return <div></div>;
+	return <div style={style}></div>;
 };
 
 export default Board;

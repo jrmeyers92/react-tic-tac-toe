@@ -1,11 +1,15 @@
 import React from "react";
+import Board from "./components/Board";
 import Square from "./components/Square";
 
 const App = () => {
-	const bob = "name";
+	const style = {
+		width: "100vw",
+	};
+
 	return (
-		<div>
-			<Square />
+		<div style={style}>
+			<Board />
 		</div>
 	);
 };

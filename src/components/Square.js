@@ -1,17 +1,16 @@
 import React from "react";
 
-const Square = () => {
+const Square = (props) => {
 	const style = {
 		background: "lightBlue",
-		height: "50px",
-		width: "50px",
+		fontSize: "30px",
 		border: "3px solid Darkblue",
 		cursor: "pointer",
 	};
 
 	return (
 		<div>
-			<button style={style}></button>
+			<button style={style}>{props.number}</button>
 		</div>
 	);
 };
